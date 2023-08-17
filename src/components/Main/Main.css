@@ -1,0 +1,43 @@
+.main {
+    position: relative;
+    z-index: 0;
+}
+
+.main__intro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main__intro-text {
+    background-color: rgb(55, 150, 131, 0.4);
+    padding: 50px 0 60px;
+    border-radius: 10px;
+
+}
+
+.main__intro-title {
+ margin-right: 0;
+}
+.main__intro-subtitle {
+margin: 0;
+}
+
+
+.main__intro-img {
+    background-image: url(../../images/technology-4256272_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width:300px;
+    width: 50%;
+    height: 50%;
+    min-height: 200px;    
+    position: absolute;
+    top:0;
+    right: 45px;
+    z-index: -1;
+    border-radius: 10px;
+}
