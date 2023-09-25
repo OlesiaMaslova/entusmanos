@@ -1,0 +1,29 @@
+.form-container {
+    padding: 30px;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input-title {
+    text-align: center;
+}
+
+
+.form__input_place_order {
+    width: 300px;
+    height: 150px;
+
+}
+
+.form__btn {
+    margin: 30px;
+    background-color: #36724d;
+    border: none;
+    border-radius: 5px;
+}

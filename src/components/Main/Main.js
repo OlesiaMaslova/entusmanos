@@ -3,6 +3,7 @@ import React from 'react';
 import imgPosting from '../../images/IMG_20230817_095105_058.png';
 import imgGetting from '../../images/IMG_20230817_095421_829.png';
 import imgChoosing from '../../images/IMG_20230817_095526_018.png';
+import Publications from '../Publications/Publications';
 
 
 function Main() {
@@ -40,8 +41,11 @@ function Main() {
                     </li>
                 </ul>
             </div>
-            <h2 className='main__how-heading'>Autoriza para empezar</h2>
-            <button className='header__menu_btn'>SignIN</button>
+            
+           
+            <Publications />
+           
+            
             <div className='main__feedback'>
                 <h2 className='main__feedback-heading'>Que opinan nuestros usuarios</h2>
             <ul className='main__feedback-list'>
