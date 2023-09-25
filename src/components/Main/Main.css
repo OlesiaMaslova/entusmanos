@@ -43,7 +43,10 @@ margin: 0;
 }
 
 .main__how {
- 
+    background-color:#8EE4AF;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .main__how-list {
@@ -51,6 +54,12 @@ margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
+    width: 70%;
+}
+
+.main__how-item {
+    width: 30%;
 }
 
 .main__how-box {
@@ -58,16 +67,21 @@ margin: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #8EE4AF;
+    background-color: #cbf5db;
+    border-radius: 20px;
 }
-
 .main__how-img {
     height: 100px;
     width: 100px;
 }
 
 .main__feedback {
-    overflow: initial;
+    overflow: initial;  
+}
+
+.main__feedback-heading {
+   text-align: center;
+    margin: 20px auto;
 }
 
 .main__feedback-list {
