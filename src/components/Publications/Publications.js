@@ -1,23 +1,43 @@
 import React from 'react';
 import './Publications.css';
 import SubmitForm from '../SubmitForm/SubmitForm';
+import PubItem from '../PubItem/PubItem';
 
 function Publications() {
+
+  const [finalData, setFinalData] = React.useState([]);
+
+  function setDataValue(data) {
+    const dataArray = [data,...finalData]
+    
+    setFinalData(dataArray);
+    console.log(finalData)
+  }
+  
+  function deletePublication(data) {
+    setFinalData((finalData) => finalData.filter((finalItem) =>  finalItem.id !== data.id))
+    }
+
+    
+
   return (
     <div className="publications">
 
-    <SubmitForm />
+    <SubmitForm onSubmit={setDataValue} />
 
     <div className='publications__wrap'>
-    <ul className='publucations__list'>
-    <li className='publications__item'>
-      <div className='publications__item-content'>
-        <h2 className='publications__item-title'> Nombre de la tarea </h2>
-        <p className='publications__item-text'>descripcion de la tarea aqui lalalalalalalallalalalalalalal </p>
-        <p className='publications__item-author'>Autor de la tarea</p>
-        <p className='publications__item-contact'>+1234564674</p>
-      </div>
-    </li>
+    <ul className='publications__list'>
+    
+    {finalData.map((data) => {
+      data.id =  Math.floor(Math.random()*10000);
+
+return (
+    <PubItem name={data.name} order={data.oder} title={data.title} contact={data.contact} key={data.id} onDelete={deletePublication} dataItem={data}/>
+
+)
+
+})}
+
     </ul>
 
     </div>
