@@ -16,7 +16,7 @@ props.onDelete(props.dataItem);
         <p className='publications__item-contact'>{props.contact}</p>
       </div>
       <button className='publications__btn publications__delete-btn' onClick={handleDelete}></button>
-      <button className='publications__btn publications__edit-btn'></button>
+      <div className='publications__price-block'><div className='publications__price-icon'></div><p className='publications__price-sub'>{props.price}</p></div>
     </li>
       
     </div>

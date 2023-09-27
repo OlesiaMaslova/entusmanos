@@ -6,15 +6,48 @@
     }
 }
 
+.publications__wrap {
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    background-color: rgba(127, 255, 212, 0.386);
+    min-height: 50vh;
+}
 
+.publications__title {
+    text-align: center;
+}
+
+.publications__warn {
+    text-align: center;
+    margin: 70px auto;
+
+}
 
 .publications__item-content {
-    border: 1px solid black;
+  
+    margin: 30px;
     
 }
 
 .publications__item {
     position: relative;
+    max-width: 700px;
+    margin: 30px auto;
+    border: 1px solid rgb(114, 122, 109, 0.1);
+    background-color: rgb(189, 231, 162, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.publications__item-title {
+    font-size: 30px;
+}
+
+.publications__item-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.publications__item-author {
+    font-weight: 600;
 }
 
 .publications__list {
@@ -35,17 +68,33 @@
     cursor: pointer;
 }
 
-.publications__edit-btn {
+.publications__price-block {
     position: absolute;
-    top:10px;
+    bottom:40px;
     right: 40px;
-    background-image: url(../../images/edit.png);
-    border:none;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    background-size: cover;
-    cursor: pointer;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: rgba(127, 255, 212, 0.174);
+
+}
+
+.publications__price-sub {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.publications__price-icon {
+background-image: url(../../images/free-sticker-payment-8305559.png);
+width: 30px;
+height: 30px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+
 }
 
 .publications__btn:hover {

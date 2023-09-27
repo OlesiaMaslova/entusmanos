@@ -1,3 +1,4 @@
+
 .main {
     position: relative;
     z-index: 0;
@@ -8,21 +9,110 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 80vh;
 
 }
+
+.main__intro-sideinfo {
+    width:20%;
+    height: 70%;
+    background-color: #63fcdd66;
+    position: absolute;
+    top:82px;
+    left: 38px;
+}
+
+.main__intro-sidewrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 10px;
+}
+
+.main__intro-sidetitle {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main__intro-sidesubtitle {
+    font-size: 10px;
+    margin: 18px auto;
+    text-align: center;
+}
+
+.main__intro-sideicon {
+    background-size: cover;
+    width:35%;
+    height: 72%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-self: center;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.main__intro-hidden {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    display: none;
+}
+
+.hidden {
+    width:35px;
+    height: 35px;
+}
+
+.delivery {
+    background-image: url(../../images/free-icon-delivery-man-2830175.png);
+}
+
+.hogar {
+    background-image: url(../../images/free-icon-cleaning-995053.png);
+}
+
+.desarollo {
+    background-image: url(../../images/free-icon-programing-4667837.png);
+}
+
+
+.design {
+    background-image: url(../../images/free-icon-graphic-design-2915640.png);
+}
+
+.reparacion {
+    background-image: url(../../images/free-icon-paint-brush-6979525.png);
+}
+
+.instalacion {
+    background-image: url(../../images/free-icon-home-appliance-6020736.png);
+}
+
 
 .main__intro-text {
     background-color: rgb(55, 150, 131, 0.4);
     padding: 50px 0 60px;
     border-radius: 10px;
+    width: 50%;
+    height: 50%;
 
+}
+
+.main__intro-container {
+    background-color: rgba(240, 255, 255, 0.479);
+    padding:30px 0 30px;
+    box-shadow:rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .main__intro-title {
  margin-right: 0;
+ text-align: center;
 }
 .main__intro-subtitle {
 margin: 0;
+text-align: center;
 }
 
 
@@ -33,10 +123,10 @@ margin: 0;
     background-position: center;
     min-width:300px;
     width: 50%;
-    height: 50%;
+    height: 90%;
     min-height: 200px;    
     position: absolute;
-    top:0;
+    top: 30px;
     right: 45px;
     z-index: -1;
     border-radius: 10px;
@@ -45,8 +135,13 @@ margin: 0;
 .main__how {
     background-color:#8EE4AF;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main__how-heading {
+    text-align: center;
 }
 
 .main__how-list {
@@ -110,4 +205,56 @@ margin: 0;
 
 .main__feedback-text {
     text-align: center;
+}
+
+@media screen  and (max-width:768px) {
+    .main__intro-img {
+        background-image: url(../../images/technology-4256272_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position:absolute;
+        top:0;
+        right:0;       
+        z-index: -1;
+        border-radius: 0;
+    }
+    .main__intro-sideinfo {
+        display: none;
+       
+    }
+
+    .main__intro-title {
+        font-size: 20px;
+    }
+
+    .main__intro-text {
+        width: 70%;
+        height: 40%;
+    }
+    .main__intro-hidden {
+        display: flex;
+    }
+    .main__how-list {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+
+}
+
+@media screen  and (max-width:500px) {
+    .main__how-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__how-item {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen  and (min-width:768px) and (max-width:1024px) {
+    
 }
