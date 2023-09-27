@@ -9,10 +9,37 @@ import Publications from '../Publications/Publications';
 function Main() {
     return (
         <div className="main">
+
             <div className='main__intro'>
+                <div className='main__intro-sideinfo'>
+                    <p className='main__intro-sidetitle'>Mas de 200 000 participantes en cada ciudad de Chile</p>
+                    <div className='main__intro-sidewrap'>
+                        <div className='main__intro-sideicon delivery'></div>
+                        <p className='main__intro-sidesubtitle'>Servicio de Delivery</p>
+                        <div className='main__intro-sideicon hogar'></div>
+                        <p className='main__intro-sidesubtitle'>Tareas de Hogar</p>
+                        <div className='main__intro-sideicon desarollo'></div>
+                        <p className='main__intro-sidesubtitle'>Desarollo de Software</p>
+                        <div className='main__intro-sideicon design'></div>
+                        <p className='main__intro-sidesubtitle'>Diseño</p>
+                        <div className='main__intro-sideicon reparacion'></div>
+                        <p className='main__intro-sidesubtitle'>Reparacion y Construccion</p>
+                        <div className='main__intro-sideicon instalacion'></div>
+                        <p className='main__intro-sidesubtitle'>Instalacion de Equipos</p>
+
+                    </div>
+                </div>
                 <div className='main__intro-text'>
-                    <h1 className='main__intro-title'>Liberamos de preocupaciones</h1>
-                    <p className='main__intro-subtitle'>Ayudamos a encontrar la mejor solucion</p>
+                    <div className='main__intro-container'> <h1 className='main__intro-title'>Dejanos liberarte de preocupaciones</h1>
+                    <p className='main__intro-subtitle'>Ayudamos a encontrar una persona confiable para cualquier tarea.</p></div>
+                    <div className='main__intro-hidden'>
+                    <div className='main__intro-sideicon delivery hidden'></div>
+                    <div className='main__intro-sideicon hogar hidden'></div>
+                    <div className='main__intro-sideicon desarollo hidden'></div>
+                    <div className='main__intro-sideicon design hidden'></div>
+                    <div className='main__intro-sideicon reparacion hidden'></div>
+                    <div className='main__intro-sideicon instalacion hidden'></div>
+                    </div>
                 </div>
                 <div className='main__intro-img'></div>
             </div>

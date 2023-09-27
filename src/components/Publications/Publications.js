@@ -22,17 +22,22 @@ function Publications() {
 
   return (
     <div className="publications">
+     
 
     <SubmitForm onSubmit={setDataValue} />
 
     <div className='publications__wrap'>
+    <h2 className='publications__title'>Ayuda que se necesita hoy:</h2>
     <ul className='publications__list'>
-    
-    {finalData.map((data) => {
+
+    {finalData.length===0? <p className='publications__warn'>Todavia no hay tareas publicadas</p>: ''}
+
+    {
+    finalData.map((data) => {
       data.id =  Math.floor(Math.random()*10000);
 
 return (
-    <PubItem name={data.name} order={data.oder} title={data.title} contact={data.contact} key={data.id} onDelete={deletePublication} dataItem={data}/>
+  <PubItem name={data.name} order={data.order} title={data.title} contact={data.contact} price={data.price} key={data.id} onDelete={deletePublication} dataItem={data}/>
 
 )
 
