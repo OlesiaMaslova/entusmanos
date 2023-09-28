@@ -4,15 +4,19 @@ import './SubmitForm.css';
 function SubmitForm(props) {
 
 const [data, setData] = React.useState({})
+const [isValid, setIsValid] = React.useState(true);
 
 function submitOrder(event) {
  event.preventDefault();
+ if(!event.target.checkValidity()) {
+  setIsValid(false);
+ }
  props.onSubmit(data);
+ event.target.reset();
 }
 
 function getInputValue(event) {
- const { name, value} = event.target;
- 
+  const { name, value} = event.target;
  setData({...data, 
   [name] :value});
  
@@ -25,7 +29,7 @@ function getInputValue(event) {
   return (
     <div className="form-container">
 
-   <form className='form' action="" encType="text/plain">
+   <form className='form' action="" encType="text/plain" onSubmit={submitOrder}>
    <label>
     <p className='form__input-title'>Su Nombre</p>
     <input className='form__input' type="text" name="name" placeholder='Como se llama?' onChange={getInputValue} required />
@@ -46,7 +50,7 @@ function getInputValue(event) {
     <p className='form__input-title'>Su contacto?</p>
     <input className='form__input'  type="text" name="contact" placeholder='Su numero de tel' onChange={getInputValue} required />
   </label>
-  <button className='form__btn' type="submit" onClick={submitOrder}>Publicar</button>
+  <button className='form__btn' type="submit" disabled={!isValid}>Publicar</button>
 </form>
 
     </div>

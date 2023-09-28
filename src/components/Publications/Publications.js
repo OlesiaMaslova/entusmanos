@@ -11,7 +11,6 @@ function Publications() {
     const dataArray = [data,...finalData]
     
     setFinalData(dataArray);
-    console.log(finalData)
   }
   
   function deletePublication(data) {
