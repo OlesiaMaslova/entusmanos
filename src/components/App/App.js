@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, useHistory} from 'react-router-dom';
 import './App.css';
 import '../../vendor/normalize.css';
+import '../../index.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';

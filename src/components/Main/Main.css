@@ -10,12 +10,13 @@
     align-items: center;
     justify-content: center;
     height: 80vh;
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+
 
 }
 
 .main__intro-sideinfo {
     width:20%;
-    height: 70%;
     background-color: #63fcdd66;
     position: absolute;
     top:82px;
@@ -138,6 +139,8 @@ text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+
 }
 
 .main__how-heading {
